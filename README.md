@@ -3,7 +3,7 @@
 ## Screenshots
 
 ![Desktop](./screenshots/desktop.png)
-![Mobile](./screenshots/mobile.png.png)
+![Mobile](./screenshots/mobile.png)
 
 ## Welcome! 👋
 
