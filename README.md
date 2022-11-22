@@ -16,6 +16,7 @@ Your users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
+- Bonus: I added a theme switcher because the app felt like it was too bright for me.
 
 ## Built with:
 
@@ -27,4 +28,4 @@ Your users should be able to:
 
 ## Live site URL:
 
-- 
+- https://dlxzeus777.github.io/tip-calculator-app/
