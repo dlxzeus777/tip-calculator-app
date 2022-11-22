@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    flex-direction: column;
+    transition: background-color .2s linear;
+}
+.main-container
+{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    transition: background-color .2s linear;
+}
+.tip-container
+{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    gap: 1rem;
+    transition: background-color .2s linear;
+}
+.tip-amount
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn
+{
+    margin-top: auto;
+}
+button
+{
+    width: 100%;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    padding: .5rem 0;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    transition: background-color .2s linear;
+}
+.bill-container
+{
+    padding: 1.5rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    transition: all .2s linear;
+}
+.tip-text > p{
+    margin: 0;
+    color: white;
+}
+.price
+{
+    font-size: 2rem;
+    margin: 0;
+    color: hsl(172, 67%, 45%);
+    transition: color .2s linear;
+}
+.person
+{
+    color: hsl(184, 14%, 56%);
+}
+.container{
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    border-radius: 5px;
+    color: white;
+    transition: background-color .2s linear;
+}
+.container:hover
+{
+    background-color: hsl(183, 92%, 26%);
+    cursor: pointer;
+}
+button:hover
+{
+    background-color: hsl(172, 91%, 73%);
+    cursor: pointer;
+}
+.tips{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin-bottom: 1rem;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.custom
+{
+    width: 3.4rem;
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    transition: background-color .2s linear;
+}
+
+.custom::placeholder{
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    transition: color .2s linear;
+}
+.inputs{
+    width: 97%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    padding: .5rem .2rem;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    transition: background-color .2s linear;
+}
+.inputs:hover
+{
+    background-color: hsl(187, 59%, 91%);
+    cursor: pointer;
+}
+.inputs::placeholder
+{
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    margin-right: .5rem;
+}
+.text{
+    margin: 0;
+}
+#bill
+{
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: center left .5rem;
+}
+#nop
+{
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: center left .5rem;
+}
+.error-msg
+{
+    text-align: right;
+    color: red;
+}
+.tip-calculator-text
+{
+    font-size: .5rem;
+}
+@media (max-width:680px)
+{
+    .main-container
+    {
+        flex-direction: column;
+        max-width: 80%;
+        padding: 1rem;
+    }
+    .tip-container
+    {
+        max-width: 100%;
+        width: auto;
+    }
+    .bill-container
+    {
+        padding: 0;
+    }
+    .custom
+    {
+        width: 4.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:340px)
+{
+    .tip-text > p{
+        font-size: .9rem;
+    }
+    .price
+    {
+        font-size: 1.5rem;
+    }
+}
+
+/* DARK THEME */
+
+.dark-light
+{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.dark-mode
+{
+    cursor: pointer;
+}
+.light-mode
+{
+    cursor: pointer;
+}
+
+.body-bg
+{
+    background-color: #121212;
+    color: white;
+    transition: all .2s linear;
+}
+.main-bg
+{
+    background-color: #332940;
+    color: white;
+    transition: all .2s linear;
+}
+.tip-bg
+{
+    background-color: #1f1a24;
+    color: white;
+    transition: all .2s linear;
+}
+.tip-container-bg
+{
+    background-color: #1f1a24;
+    color: white;
+    transition: all .2s linear;
+}
+.white-texts
+{
+    color: white;
+    transition: all .2s linear;
+}
+.tip-bg::placeholder
+{
+    color: white;
+    transition: all .2s linear;
+}
+.tip-bg:hover
+{
+    background-color: #5c4f6a;
+}
+.reset-btn
+{
+    background-color: #332940;
+    color: white;
+    transition: all .2s linear;
+}
+.reset-btn:hover
+{
+    background-color: #6c5985;
+}

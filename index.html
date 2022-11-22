@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <div class="dark-light">
+    <p class="dark-mode">Dark Mode</p>
+    <p class="light-mode">Light Mode</p>
+  </div>
+  <div class="main-container">
+    <div class="bill-container">
+      <p class="text">Bill</p>
+      <input type="number" name="bill" id="bill" class="inputs" placeholder="0">
+      <span class="error-msg bill-msg"></span>
+      <p>Select Tip %</p>
+      <div class="tips">
+        <div class="container">5%</div>
+        <div class="container">10%</div>
+        <div class="container">15%</div>
+        <div class="container">25%</div>
+        <div class="container">50%</div>
+        <input type="number" name="custom" id="custom" placeholder="Custom" class="container custom">
+      </div>
+      <p class="text">Number of People</p>
+      <input type="number" name="nop" id="nop" class="inputs" placeholder="0">
+      <span class="error-msg nop-msg"></span>
+    </div>
+    <div class="tip-container">
+      <div class="tip-amount">
+        <div class="tip-text">
+          <p>Tip Amount</p>
+          <span class="person">/ person</span>
+        </div>
+        <p class="tip-price price">$0.00</p>
+      </div>
+      <div class="total">
+        <div class="tip-text">
+          <p>Total</p>
+          <span class="person">/ person</span>
+        </div>
+        <p class="total-price price">$0.00</p>
+      </div>
+      <div class="btn">
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
